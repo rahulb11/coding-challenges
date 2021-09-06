@@ -14,9 +14,8 @@ public class LengthOfLastWordTest {
 
     @ParameterizedTest
     @ArgumentsSource(LengthOfLastWordTestArgumentsProvider.class)
-    public void shouldReturnCorrectLengthOfLastWord(String input, int expected) {
-        assertEquals(LengthOfLastWord.getLengthOfLastWord(input),
-                expected,
+    void shouldReturnCorrectLengthOfLastWord(String input, int expected) {
+        assertEquals(expected, LengthOfLastWord.getLengthOfLastWord(input),
                 "The length of last word should match the expected value");
     }
 
